@@ -19,7 +19,9 @@ public:
 
     Tool(int);
 
-    void setStrength(int);
+    virtual void setStrength(int);
+    
+    virtual int getStrength();
 
     //virtual as it will be overridden by each different type
     virtual char fight(char type);// will return fight results
