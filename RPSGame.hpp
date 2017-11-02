@@ -1,3 +1,4 @@
+
 /*********************************************************************
  * Author: Noah Buchen, Alexandra Henley, Elliott Lapinel, Patrick
  * Rice, and Samantha Tone
@@ -8,6 +9,9 @@
 #define RPSGAME_HPP
 
 #include "tool.hpp"
+#include "rock.hpp"
+#include "scissors.hpp"
+#include "paper.hpp"
 
 #include <string>
 using std::string;
