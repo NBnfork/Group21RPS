@@ -7,6 +7,8 @@
 #ifndef RPSGAME_HPP
 #define RPSGAME_HPP
 
+#include "tool.hpp"
+
 #include <string>
 using std::string;
 
