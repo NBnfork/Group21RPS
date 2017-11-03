@@ -44,9 +44,9 @@ private:
 	int cWins;
 	int ties;
 
-	char rock = 'r';
-	char paper = 'p';
-	char scissor = 's';
+	char rock;
+	char paper;
+	char scissor;
 	int rCount;
 	int pCount;
 	int sCount;

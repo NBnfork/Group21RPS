@@ -20,6 +20,9 @@ RPSGame::RPSGame() {
     hWins = 0;
     cWins = 0;
     ties = 0;
+    this->rock = 'r';
+    this->paper = 'p';
+    this->scissor = 's';
 }
 
 void RPSGame::assignToolUser() {

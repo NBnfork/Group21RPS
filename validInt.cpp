@@ -38,7 +38,7 @@ int validInt(string strIn, int min, int max)
 			}
 			else
 			{
-				for(int i = 1; i < strIn.length(); i++)
+				for(unsigned int i = 1; i < strIn.length(); i++)
 				{
 					// assigns ascii value to each char to test if it's a number
 					asciiVal = int(strIn[i]);
@@ -64,7 +64,7 @@ int validInt(string strIn, int min, int max)
 			}
 			else
 			{
-				for(int i = 0; i < strIn.length(); i++)
+				for(unsigned int i = 0; i < strIn.length(); i++)
 				{
 					// assigns ascii value to each char to test if it's a number
 					asciiVal = int(strIn[i]);

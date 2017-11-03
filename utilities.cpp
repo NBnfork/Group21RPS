@@ -66,7 +66,7 @@ unsigned int getInt(unsigned int min, unsigned int max) {
         }
     } while (!validInput);
     return validInt;
-};
+}
 
 /*********************************************************************
  * Double validation. Takes the entire line as a string,
@@ -105,7 +105,7 @@ double getDouble(double min, double max) {
         }
     } while (!validInput);
     return validDouble;
-};
+}
 
 /*********************************************************************
  * String validation. Takes the entire line as a string.
@@ -150,7 +150,7 @@ string getString(unsigned int min, unsigned int max) {
     } while (!validInput);
     return userInput;
 
-};
+}
 
 /*********************************************************************
  * Takes a string and formats the output to have a border on the left
@@ -176,7 +176,7 @@ void printBoxLine(string input, int width) {
     //right border
     output += "|\n";
     cout << output;
-};
+}
 
 /*********************************************************************
  * Takes a string and formats the output to have the string in the
@@ -241,7 +241,7 @@ void printCenterTitle(string input, int width) {
     //right border
     output += "+\n";
     cout << output;
-};
+}
 
 /*********************************************************************
  * Takes a string and formats the output to have the string in the
@@ -306,7 +306,7 @@ void printBoldCenterTitle(string input, int width) {
     //right border
     output += "+\n";
     cout << output;
-};
+}
 
 /*********************************************************************
  * Prints a border with "-" dependent on the width given.
@@ -329,7 +329,7 @@ void printBorder(int width) {
  ********************************************************************/
 bool isEven(int number) {
     return number % 2 == 1;
-};
+}
 
 /*********************************************************************
  * Formats a statement with a string and a dollar amount. Prints
@@ -345,7 +345,7 @@ void printMoneyStatement(string prefix, double money, int width) {
     stringstream dollarAmount;
     dollarAmount << "$" << std::fixed << std::setprecision(2) << money;
     printLeftAndRightAlignedStrings(prefix, dollarAmount.str(), width);
-};
+}
 
 /*********************************************************************
  * Formats a statement with a string and a value that displays two
@@ -358,7 +358,7 @@ void printTwoDecimalStatement(string prefix, double value, int width) {
     stringstream twoDecimalValue;
     twoDecimalValue << std::fixed << std::setprecision(2) << value;
     printLeftAndRightAlignedStrings(prefix, twoDecimalValue.str(), width);
-};
+}
 
 /*********************************************************************
  * Formats and returns a double as a two decimal string.
@@ -368,7 +368,7 @@ string formatTwoDecimalDouble(double value) {
     stringstream twoDecimalValue;
     twoDecimalValue << std::fixed << std::setprecision(2) << value;
     return twoDecimalValue.str();
-};
+}
 
 /*********************************************************************
  * Prints one line with a left aligned string and a right aligned
@@ -397,7 +397,7 @@ void printLeftAndRightAlignedStrings(string prefix, string suffix, int width) {
     //right border
     output += "|\n";
     cout << output;
-};
+}
 
 /*********************************************************************
  * Gets a string with multiple words in it.
@@ -417,7 +417,7 @@ string getMultiWordString() {
         }
     } while (!validInput);
     return userInput;
-};
+}
 
 /*********************************************************************
  * Prompts the user to enter a multiline address.
@@ -442,4 +442,4 @@ string getAddress() {
     } while (!validInput);
     return address;
 
-};
+}
