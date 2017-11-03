@@ -12,6 +12,10 @@ Scissors::Scissors() {
 	this->strength = 1;
 }
 
+Scissors::Scissors(int userInput){
+    //user sets strength
+    this->setStrength(userInput);
+}
 
 char Scissors::fight(char computer) {
 	char winner; // 'h', 'c', 't' (human, computer, tie)

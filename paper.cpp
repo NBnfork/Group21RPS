@@ -12,6 +12,10 @@ Paper::Paper() {
 	this->strength = 1;
 }
 
+Paper::Paper(int userInput){
+    //user sets strength
+    this->setStrength(userInput);
+}
 
 char Paper::fight(char computer) {
 	char winner; // 'h', 'c', 't' (human, computer, tie)

@@ -12,12 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2204bdd-c884-43ce-a401-c8e6b6832ac6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RPSGame.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rock.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scissors.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tool.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/utilities.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/validChar.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/validInt.o" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RPSGame.cpp" afterPath="$PROJECT_DIR$/RPSGame.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RPSGame.hpp" afterPath="$PROJECT_DIR$/RPSGame.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makefile" afterPath="$PROJECT_DIR$/makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utilities.cpp" afterPath="$PROJECT_DIR$/utilities.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/validInt.cpp" afterPath="$PROJECT_DIR$/validInt.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper.cpp" afterPath="$PROJECT_DIR$/paper.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rock.cpp" afterPath="$PROJECT_DIR$/rock.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scissors.cpp" afterPath="$PROJECT_DIR$/scissors.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,10 +69,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RPSGame.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="paper.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RPSGame.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RPSGame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
+            <state relative-caret-position="95">
               <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="e#273#295#0" expanded="true" />
@@ -74,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makefile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="99">
@@ -97,8 +114,8 @@
       <file leaf-file-name="rock.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rock.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="429">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -109,6 +126,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="5" column="70" lean-forward="false" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scissors.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scissors.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -143,9 +170,6 @@
         <option value="$PROJECT_DIR$/scissors.hpp" />
         <option value="$PROJECT_DIR$/tool.hpp" />
         <option value="$PROJECT_DIR$/tool.cpp" />
-        <option value="$PROJECT_DIR$/scissors.cpp" />
-        <option value="$PROJECT_DIR$/paper.cpp" />
-        <option value="$PROJECT_DIR$/rock.cpp" />
         <option value="$PROJECT_DIR$/rock.hpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Makefile" />
@@ -154,6 +178,9 @@
         <option value="$PROJECT_DIR$/RPSGame.cpp" />
         <option value="$PROJECT_DIR$/RPSGame.hpp" />
         <option value="$PROJECT_DIR$/makefile" />
+        <option value="$PROJECT_DIR$/rock.cpp" />
+        <option value="$PROJECT_DIR$/scissors.cpp" />
+        <option value="$PROJECT_DIR$/paper.cpp" />
       </list>
     </option>
   </component>
@@ -249,7 +276,7 @@
       <workItem from="1509502112776" duration="2742000" />
       <workItem from="1509524601286" duration="3769000" />
       <workItem from="1509654445937" duration="4866000" />
-      <workItem from="1509697061621" duration="5895000" />
+      <workItem from="1509697061621" duration="6437000" />
     </task>
     <task id="LOCAL-00001" summary="Working Makefile">
       <created>1508927688533</created>
@@ -269,7 +296,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20031000" />
+    <option name="totallyTimeSpent" value="20573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="2174" height="1390" extended-state="0" />
@@ -656,34 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scissors.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tool.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rock.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -725,16 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RPSGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#273#295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rock.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -758,6 +751,40 @@
         <state relative-caret-position="99">
           <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scissors.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rock.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RPSGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#273#295#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

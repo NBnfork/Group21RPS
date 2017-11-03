@@ -8,11 +8,10 @@
 #include "rock.hpp"
 
 Rock::Rock(){
-	//set default strength
 	this->strength = 1;
 }
 
-Rock::Rock(int userInput) : Tool() {
+Rock::Rock(int userInput){
     //user sets strength
 	this->setStrength(userInput);
 }
