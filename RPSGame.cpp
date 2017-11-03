@@ -57,8 +57,6 @@ void RPSGame::playGame() {
         cout << "You have chose to use default strength values" << endl;
     }
 
-    //TODO *** THIS IS WHERE STRENGTH WILL NEED TO BE SET *** //
-
     // do while loop for the game to play as long as the user has not input 'e'
     do {
         // prints a notice with a box around it
@@ -155,56 +153,6 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
         compTool->setStrength(compStrength);
     }
     rCount = pCount = sCount = 0;
-
-    if (rounds > 3) // must have 3 saved rounds in order to have enough input
-    {
-        last = userHistory[rounds - 3]; // this is -3 because starts at zero & we look at 2 rounds back
-        current = userHistory[rounds - 2]; // this is -2 because starts at zero & we look at prev round
-        for (int i = 1; i < rounds - 1; i++) {
-            if (userHistory[i] == current && userHistory[i - 1] == last) {
-                if (userHistory[i + 1] == rock) { rCount++; }
-                else if (userHistory[i + 1] == paper) { pCount++; }
-                else if (userHistory[i + 1] == scissor) { sCount++; }
-            }
-        }
-
-        // 7 possible outcomes below:
-        if (rCount == pCount && rCount == sCount) // all equally likely
-        {
-            randVal = rand() % 3;
-            if (randVal == 0) { compChoice = 'r'; }
-            else if (randVal == 1) { compChoice = 'p'; }
-            else if (randVal == 2) { compChoice = 's'; }
-        } else if (rCount > pCount && rCount > sCount) // rock most likely
-        { compChoice = 'p'; } // choose paper to beat their rock
-        else if (pCount > rCount && pCount > sCount) // paper most likely
-        { compChoice = 's'; } // choose scissors to beat their paper
-        else if (sCount > pCount && sCount > rCount) // scissors most likely
-        { compChoice = 'r'; } // choose rock to beat their scissors
-        else if (rCount == pCount && rCount > sCount) // rock & paper most likely
-        { compChoice = 'p'; } // p beats r & ties p but s loses to r & beats p
-        else if (rCount == sCount && rCount > pCount) // rock & scissors most likely
-        { compChoice = 'r'; } // r beats s & ties r but p loses to s & beats r
-        else if (sCount == pCount && sCount > rCount) // scissors & paper most likely
-        { compChoice = 's'; } // s beats p & ties s but r loses to p & beats s
-    } else // randomly select if not enough data for AI
-    {
-        randVal = rand() % 3;
-        if (randVal == 0) { compChoice = 'r'; }
-        else if (randVal == 1) { compChoice = 'p'; }
-        else if (randVal == 2) { compChoice = 's'; }
-    }
-
-    //TODO *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
-    if (compChoice == 'r') {
-        cout << "Computer: ROCK" << endl;
-    }
-    if (compChoice == 'p') {
-        cout << "Computer: PAPER" << endl;
-    }
-    if (compChoice == 's') {
-        cout << "Computer: SCISSORS" << endl;
-    }
 }
 
 void RPSGame::printResults() {
