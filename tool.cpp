@@ -7,24 +7,23 @@
 #include "tool.hpp"
 
 Tool::Tool() {
-	//set default strength
-	this->strength = 1;
+    //set default strength
+    this->strength = 1;
 }
 
 Tool::Tool(int userInput) {
     //user sets strength
-	this->setStrength(userInput);
+    this->setStrength(userInput);
 }
 
 void Tool::setStrength(int userInput) {
-	strength = userInput;
+    strength = userInput;
 }
 
 char Tool::fight(char type) {
-	return 0;
+    return 0;
 }
 
-int Tool::getStrength()
-{
-return strength;
+int Tool::getStrength() {
+    return strength;
 }

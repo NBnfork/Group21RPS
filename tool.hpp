@@ -21,6 +21,8 @@ public:
 
     void setStrength(int);
 
+    int getStrength();
+
     virtual char fight(char type);
 };
 

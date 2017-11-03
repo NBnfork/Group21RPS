@@ -7,18 +7,14 @@
 *********************************************************************/
 #include "rock.hpp"
 
-Rock::Rock() {
+Rock::Rock(){
 	//set default strength
 	this->strength = 1;
 }
 
-Rock::Rock(int userInput) {
+Rock::Rock(int userInput) : Tool() {
     //user sets strength
 	this->setStrength(userInput);
-}
-
-void Rock::setStrength(int userInput) {
-	strength = userInput;
 }
 
 char Rock::fight(char computer) {
