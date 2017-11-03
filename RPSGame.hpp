@@ -15,6 +15,10 @@ using std::string;
 #include <vector>
 using std::vector;
 
+#include "Rock.hpp"
+#include "Paper.hpp"
+#include "Scissors.hpp"
+
 class RPSGame{
 
 public:

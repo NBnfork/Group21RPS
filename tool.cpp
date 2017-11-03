@@ -24,6 +24,4 @@ char Tool::fight(char type) {
     return 0;
 }
 
-int Tool::getStrength() {
-    return strength;
-}
+
