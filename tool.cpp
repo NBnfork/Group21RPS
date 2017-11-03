@@ -23,8 +23,10 @@ void Tool::setStrength(int userInput) {
 char Tool::fight(char type) {
 	return 0;
 }
-
+//Should be safe to comment this out 
+/*
 int Tool::getStrength()
 {
 return strength;
 }
+*/
