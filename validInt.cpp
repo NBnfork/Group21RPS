@@ -34,6 +34,7 @@ int validInt(string strIn, int min, int max)
 			{
 				loopEnder = false;
 				cout << "This input validation does not allow for integers less than -999,999,999" << endl;
+				cout << "Your string should be less than 11 characters if beginning with a negative sign." << endl;
 			}
 			else
 			{
@@ -59,6 +60,7 @@ int validInt(string strIn, int min, int max)
 			{
 				loopEnder = false;
 				cout << "This input validation does not allow for integers greater than 999,999,999" << endl;
+				cout << "Your string should be less than 10 characters if not beginning with a negative sign." << endl;
 			}
 			else
 			{
