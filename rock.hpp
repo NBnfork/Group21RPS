@@ -4,7 +4,6 @@
  * Date: 10/25/2017
  * Description: This is the implemenation file for the Rock class
 *********************************************************************/
-
 #ifndef ROCK_HPP
 #define ROCK_HPP
 
@@ -16,10 +15,6 @@ public:
     Rock();
 
     Rock(int);
-
-    void setStrength(int);
-    
-    int getStrength();
 
     char fight(char type) override;
 

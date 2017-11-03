@@ -10,12 +10,11 @@ CMakeFiles/Group21RPS.dir/RPSGame.cpp.o: ../tool.hpp
 CMakeFiles/Group21RPS.dir/RPSGame.cpp.o: ../utilities.hpp
 CMakeFiles/Group21RPS.dir/RPSGame.cpp.o: ../validChar.hpp
 
-CMakeFiles/Group21RPS.dir/Rock.cpp.o: ../Rock.cpp
-CMakeFiles/Group21RPS.dir/Rock.cpp.o: ../rock.hpp
-CMakeFiles/Group21RPS.dir/Rock.cpp.o: ../tool.hpp
-
 CMakeFiles/Group21RPS.dir/main.cpp.o: ../RPSGame.hpp
 CMakeFiles/Group21RPS.dir/main.cpp.o: ../main.cpp
+CMakeFiles/Group21RPS.dir/main.cpp.o: ../paper.hpp
+CMakeFiles/Group21RPS.dir/main.cpp.o: ../rock.hpp
+CMakeFiles/Group21RPS.dir/main.cpp.o: ../scissors.hpp
 CMakeFiles/Group21RPS.dir/main.cpp.o: ../tool.hpp
 
 CMakeFiles/Group21RPS.dir/paper.cpp.o: ../paper.cpp

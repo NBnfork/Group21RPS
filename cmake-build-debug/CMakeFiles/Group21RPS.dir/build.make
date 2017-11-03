@@ -201,33 +201,9 @@ CMakeFiles/Group21RPS.dir/tool.cpp.o.provides: CMakeFiles/Group21RPS.dir/tool.cp
 CMakeFiles/Group21RPS.dir/tool.cpp.o.provides.build: CMakeFiles/Group21RPS.dir/tool.cpp.o
 
 
-CMakeFiles/Group21RPS.dir/Rock.cpp.o: CMakeFiles/Group21RPS.dir/flags.make
-CMakeFiles/Group21RPS.dir/Rock.cpp.o: ../Rock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Group21RPS.dir/Rock.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Group21RPS.dir/Rock.cpp.o -c /cygdrive/c/Users/Patrick/group/Rock.cpp
-
-CMakeFiles/Group21RPS.dir/Rock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Group21RPS.dir/Rock.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Patrick/group/Rock.cpp > CMakeFiles/Group21RPS.dir/Rock.cpp.i
-
-CMakeFiles/Group21RPS.dir/Rock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Group21RPS.dir/Rock.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Patrick/group/Rock.cpp -o CMakeFiles/Group21RPS.dir/Rock.cpp.s
-
-CMakeFiles/Group21RPS.dir/Rock.cpp.o.requires:
-
-.PHONY : CMakeFiles/Group21RPS.dir/Rock.cpp.o.requires
-
-CMakeFiles/Group21RPS.dir/Rock.cpp.o.provides: CMakeFiles/Group21RPS.dir/Rock.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Group21RPS.dir/build.make CMakeFiles/Group21RPS.dir/Rock.cpp.o.provides.build
-.PHONY : CMakeFiles/Group21RPS.dir/Rock.cpp.o.provides
-
-CMakeFiles/Group21RPS.dir/Rock.cpp.o.provides.build: CMakeFiles/Group21RPS.dir/Rock.cpp.o
-
-
 CMakeFiles/Group21RPS.dir/validChar.cpp.o: CMakeFiles/Group21RPS.dir/flags.make
 CMakeFiles/Group21RPS.dir/validChar.cpp.o: ../validChar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Group21RPS.dir/validChar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Group21RPS.dir/validChar.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Group21RPS.dir/validChar.cpp.o -c /cygdrive/c/Users/Patrick/group/validChar.cpp
 
 CMakeFiles/Group21RPS.dir/validChar.cpp.i: cmake_force
@@ -251,7 +227,7 @@ CMakeFiles/Group21RPS.dir/validChar.cpp.o.provides.build: CMakeFiles/Group21RPS.
 
 CMakeFiles/Group21RPS.dir/utilities.cpp.o: CMakeFiles/Group21RPS.dir/flags.make
 CMakeFiles/Group21RPS.dir/utilities.cpp.o: ../utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Group21RPS.dir/utilities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Group21RPS.dir/utilities.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Group21RPS.dir/utilities.cpp.o -c /cygdrive/c/Users/Patrick/group/utilities.cpp
 
 CMakeFiles/Group21RPS.dir/utilities.cpp.i: cmake_force
@@ -281,7 +257,6 @@ Group21RPS_OBJECTS = \
 "CMakeFiles/Group21RPS.dir/RPSGame.cpp.o" \
 "CMakeFiles/Group21RPS.dir/scissors.cpp.o" \
 "CMakeFiles/Group21RPS.dir/tool.cpp.o" \
-"CMakeFiles/Group21RPS.dir/Rock.cpp.o" \
 "CMakeFiles/Group21RPS.dir/validChar.cpp.o" \
 "CMakeFiles/Group21RPS.dir/utilities.cpp.o"
 
@@ -294,12 +269,11 @@ Group21RPS.exe: CMakeFiles/Group21RPS.dir/rock.cpp.o
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/RPSGame.cpp.o
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/scissors.cpp.o
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/tool.cpp.o
-Group21RPS.exe: CMakeFiles/Group21RPS.dir/Rock.cpp.o
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/validChar.cpp.o
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/utilities.cpp.o
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/build.make
 Group21RPS.exe: CMakeFiles/Group21RPS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Group21RPS.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Group21RPS.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Group21RPS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -313,7 +287,6 @@ CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/rock.cpp.o.require
 CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/RPSGame.cpp.o.requires
 CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/scissors.cpp.o.requires
 CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/tool.cpp.o.requires
-CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/Rock.cpp.o.requires
 CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/validChar.cpp.o.requires
 CMakeFiles/Group21RPS.dir/requires: CMakeFiles/Group21RPS.dir/utilities.cpp.o.requires
 

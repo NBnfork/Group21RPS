@@ -8,16 +8,15 @@
 #define RPSGAME_HPP
 
 #include "tool.hpp"
-
 #include <string>
 using std::string;
 
 #include <vector>
 using std::vector;
 
-#include "Rock.hpp"
-#include "Paper.hpp"
-#include "Scissors.hpp"
+#include "rock.hpp"
+#include "paper.hpp"
+#include "scissors.hpp"
 
 class RPSGame{
 

@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/Patrick/group/RPSGame.cpp" "/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles/Group21RPS.dir/RPSGame.cpp.o"
-  "/cygdrive/c/Users/Patrick/group/Rock.cpp" "/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles/Group21RPS.dir/Rock.cpp.o"
   "/cygdrive/c/Users/Patrick/group/main.cpp" "/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles/Group21RPS.dir/main.cpp.o"
   "/cygdrive/c/Users/Patrick/group/paper.cpp" "/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles/Group21RPS.dir/paper.cpp.o"
   "/cygdrive/c/Users/Patrick/group/rock.cpp" "/cygdrive/c/Users/Patrick/group/cmake-build-debug/CMakeFiles/Group21RPS.dir/rock.cpp.o"

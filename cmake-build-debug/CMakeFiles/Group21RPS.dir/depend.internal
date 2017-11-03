@@ -10,13 +10,12 @@ CMakeFiles/Group21RPS.dir/RPSGame.cpp.o
  /cygdrive/c/Users/Patrick/group/tool.hpp
  /cygdrive/c/Users/Patrick/group/utilities.hpp
  /cygdrive/c/Users/Patrick/group/validChar.hpp
-CMakeFiles/Group21RPS.dir/Rock.cpp.o
- /cygdrive/c/Users/Patrick/group/Rock.cpp
- /cygdrive/c/Users/Patrick/group/rock.hpp
- /cygdrive/c/Users/Patrick/group/tool.hpp
 CMakeFiles/Group21RPS.dir/main.cpp.o
  /cygdrive/c/Users/Patrick/group/RPSGame.hpp
  /cygdrive/c/Users/Patrick/group/main.cpp
+ /cygdrive/c/Users/Patrick/group/paper.hpp
+ /cygdrive/c/Users/Patrick/group/rock.hpp
+ /cygdrive/c/Users/Patrick/group/scissors.hpp
  /cygdrive/c/Users/Patrick/group/tool.hpp
 CMakeFiles/Group21RPS.dir/paper.cpp.o
  /cygdrive/c/Users/Patrick/group/paper.cpp

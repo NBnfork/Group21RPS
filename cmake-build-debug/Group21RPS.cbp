@@ -89,12 +89,6 @@
 		<Unit filename="/cygdrive/c/Users/Patrick/group/RPSGame.hpp">
 			<Option target="Group21RPS"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Patrick/group/Rock.cpp">
-			<Option target="Group21RPS"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/Patrick/group/Rock.hpp">
-			<Option target="Group21RPS"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/Patrick/group/main.cpp">
 			<Option target="Group21RPS"/>
 		</Unit>

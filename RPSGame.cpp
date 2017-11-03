@@ -8,9 +8,6 @@
 #include "RPSGame.hpp"
 #include "validChar.hpp"
 #include "utilities.hpp"
-#include "rock.hpp"
-#include "paper.hpp"
-#include "scissors.hpp"
 
 using std::string;
 using std::vector;
@@ -66,7 +63,7 @@ void RPSGame::playGame() {
     do {
         // prints a notice with a box around it
         printBorder(width);
-        printCenterTitle("Round " + rounds, width);
+        printCenterTitle("Round " + to_string(rounds), width);
         printBorder(width);
 
         cout << "Choose your tool (r - rock, p - paper, s - scissor, e - exit)" << endl;
@@ -144,17 +141,17 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
     //TODO *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
     if (compChoice == 'r') {
         cout << "Computer: ROCK" << endl;
-        compTool = new Rock;
+        compTool = new Rock();
         compTool->setStrength(compStrength);
     }
     if (compChoice == 'p') {
         cout << "Computer: PAPER" << endl;
-        compTool = new Paper;
+        compTool = new Paper();
         compTool->setStrength(compStrength);
     }
     if (compChoice == 's') {
         cout << "Computer: SCISSORS" << endl;
-        compTool = new Scissors;
+        compTool = new Scissors();
         compTool->setStrength(compStrength);
     }
     rCount = pCount = sCount = 0;

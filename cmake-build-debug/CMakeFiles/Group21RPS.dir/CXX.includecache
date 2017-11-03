@@ -13,12 +13,6 @@ validChar.hpp
 /cygdrive/c/Users/Patrick/group/validChar.hpp
 utilities.hpp
 /cygdrive/c/Users/Patrick/group/utilities.hpp
-rock.hpp
-/cygdrive/c/Users/Patrick/group/rock.hpp
-paper.hpp
-/cygdrive/c/Users/Patrick/group/paper.hpp
-scissors.hpp
-/cygdrive/c/Users/Patrick/group/scissors.hpp
 
 /cygdrive/c/Users/Patrick/group/RPSGame.hpp
 tool.hpp
@@ -27,10 +21,12 @@ string
 -
 vector
 -
-
-/cygdrive/c/Users/Patrick/group/Rock.cpp
 rock.hpp
 /cygdrive/c/Users/Patrick/group/rock.hpp
+paper.hpp
+/cygdrive/c/Users/Patrick/group/paper.hpp
+scissors.hpp
+/cygdrive/c/Users/Patrick/group/scissors.hpp
 
 /cygdrive/c/Users/Patrick/group/main.cpp
 RPSGame.hpp
