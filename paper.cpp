@@ -19,8 +19,27 @@ Paper::Paper(int userInput){
 }
 
 char Paper::fight(Tool *computer) {
+
 	char winner; // 'h', 'c', 't' (human, computer, tie)
-    //TODO
+	// paper against rock, paper strength is doubled
+	if(computer->getType() == 'r') {
+		if ((computer->getStrength()) < strength*2)
+			winner = 'h';
+		else if ((computer->getStrength()) > strength*2)
+			winner = 'c';
+		else
+			winner = 't';
+	}//paper vs. scissors, paper strength is halved, or computer is doubled
+	else if (computer->getType() == 's') {
+		if ((computer->getStrength() * 2) < (strength ))
+			winner = 'h';
+		else if ((computer->getStrength() * 2) > (strength))
+			winner = 'c';
+		else
+			winner = 't';
+	}
+	else //paper vs. paper
+		winner = 't';
 
 	return winner;
 }
