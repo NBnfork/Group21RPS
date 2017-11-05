@@ -20,8 +20,16 @@ void Tool::setStrength(int userInput) {
     strength = userInput;
 }
 
-char Tool::fight(char type) {
+char Tool::fight(Tool*) {
     return 0;
+}
+
+int Tool::getStrength() {
+    return strength;
+}
+
+char Tool::getType() {
+    return type;
 }
 
 

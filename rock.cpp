@@ -16,10 +16,28 @@ Rock::Rock(int userInput){
 	this->setStrength(userInput);
 }
 
-char Rock::fight(char computer) {
-	char winner; // 'h', 'c', 't' (human, computer, tie)
+char Rock::fight(Tool *computer) {
 
-	//TODO
+	char winner; // 'h', 'c', 't' (human, computer, tie)
+	// rock against paper, rock strength is halved or inversely computer is doubled!
+	if(computer->getType() == 'p') {
+		if ((computer->getStrength() * 2) < strength)
+			winner = 'h';
+		else if ((computer->getStrength() * 2) > strength)
+			winner = 'c';
+		else
+			winner = 't';
+	}//rock vs. scissors, rock strength is doubled
+	else if (computer->getType() == 's') {
+		if (computer->getStrength() < (strength * 2))
+			winner = 'h';
+		else if (computer->getStrength() > (strength *2))
+			winner = 'c';
+		else
+			winner = 't';
+	}
+	else //rock vs. rock
+		winner = 't';
 
 	return winner;
 }

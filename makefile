@@ -1,6 +1,6 @@
 OBJS = main.o RPSGame.o utilities.o validInt.o validChar.o tool.o rock.o paper.o scissors.o
 CC = g++
-CFLAGS = -std=c++11 -c -Wall
+CFLAGS = -std=c++11 -c -Wall -g
 LFLAGS = -std=c++11 -Wall -o
 
 game.o: $(OBJS)
