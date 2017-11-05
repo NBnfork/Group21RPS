@@ -18,9 +18,28 @@ Scissors::Scissors(int userInput){
 	this->setStrength(userInput);
 }
 
-char Scissors::fight(Tool* computer) {
+char Scissors::fight(Tool *computer) {
+
 	char winner; // 'h', 'c', 't' (human, computer, tie)
-	//TODO
+	// scissors against paper, scissor strength doubled
+	if(computer->getType() == 'p') {
+		if ((computer->getStrength()) < strength*2)
+			winner = 'h';
+		else if ((computer->getStrength()) > strength*2)
+			winner = 'c';
+		else
+			winner = 't';
+	}//scissors vs. rock, scissors strength is halfed, or computer strength is doubled
+	else if (computer->getType() == 'r') {
+		if ((computer->getStrength() * 2) < (strength))
+			winner = 'h';
+		else if ((computer->getStrength() * 2) > (strength))
+			winner = 'c';
+		else
+			winner = 't';
+	}
+	else //scissors vs. scissors
+		winner = 't';
 
 	return winner;
 }
