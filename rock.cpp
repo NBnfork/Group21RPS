@@ -9,12 +9,13 @@
 
 Rock::Rock(){
 	this->strength = 1;
+	this->type = 'r';
 }
 
 Rock::Rock(int userInput){
     //user sets strength
 	this->setStrength(userInput);
-}
+	}
 
 char Rock::fight(Tool *computer) {
 

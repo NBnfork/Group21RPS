@@ -10,6 +10,7 @@
 Paper::Paper() {
 	//set default strength
 	this->strength = 1;
+	this->type = 'p';
 }
 
 Paper::Paper(int userInput){

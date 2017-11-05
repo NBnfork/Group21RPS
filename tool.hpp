@@ -20,8 +20,7 @@ public:
     Tool(int);
 
     void setStrength(int);
-
-    int getStrength();
+	int getStrength();
 	char getType();
     virtual char fight(Tool*);
 };

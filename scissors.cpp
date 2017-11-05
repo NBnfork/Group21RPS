@@ -10,6 +10,7 @@
 Scissors::Scissors() {
 	//set default strength
 	this->strength = 1;
+	this->type = 's';
 }
 
 Scissors::Scissors(int userInput){

@@ -9,11 +9,13 @@
 Tool::Tool() {
     //set default strength
     this->strength = 1;
+    this->type = 't';
 }
 
 Tool::Tool(int userInput) {
     //user sets strength
     this->setStrength(userInput);
+
 }
 
 void Tool::setStrength(int userInput) {
@@ -31,5 +33,7 @@ int Tool::getStrength() {
 char Tool::getType() {
     return type;
 }
+
+
 
 

@@ -26,7 +26,6 @@ RPSGame::RPSGame() {
 }
 
 void RPSGame::assignToolUser() {
-    //TODO *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
     if (rpseInput == 'r') {
         cout << "Human: ROCK" << endl;
         userTool = new Rock();
@@ -58,6 +57,8 @@ void RPSGame::playGame() {
         cin >> compStrength;
     } else if (ynInput == 'n') {
         cout << "You have chose to use default strength values" << endl;
+		userStrength = 1; //otherwise they are being set to zero in the assign tool function
+		compStrength = 1;
     }
 
     // do while loop for the game to play as long as the user has not input 'e'
@@ -78,8 +79,9 @@ void RPSGame::playGame() {
             cout << "   VS." << endl;
             userHistory.push_back(rpseInput); // must assign after comp AI done to avoid cheating
             assignToolUser();
+			//fight will always be userTool vs. compTool
+			gameWinner = userTool->fight(compTool);
 
-            //TODO *** FIGHT FUNCTION WILL NEED TO GO HERE *** //
 
             printResults();
         }
@@ -139,7 +141,6 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
         else if (randVal == 2) { compChoice = 's'; }
     }
 
-    //TODO *** WILL NEED TO ADD ASSIGNMENTS TO USER TOOLS WITHIN LOOPS *** //
     if (compChoice == 'r') {
         cout << "Computer: ROCK" << endl;
         compTool = new Rock();
