@@ -22,7 +22,7 @@ char Paper::fight(Tool *computer) {
 
 	char winner; // 'h', 'c', 't' (human, computer, tie)
 	// paper against rock, paper strength is doubled
-	if(computer->getType() == 'p') {
+	if(computer->getType() == 'r') {
 		if ((computer->getStrength()) < strength*2)
 			winner = 'h';
 		else if ((computer->getStrength()) > strength*2)
