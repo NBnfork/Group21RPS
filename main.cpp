@@ -9,7 +9,12 @@
 #include "RPSGame.hpp"
 
 int main() {
-    
+    // rand() function needs to be seeded only one time. Seeding
+    // happens here so that it is only called once.
+    unsigned seed;
+    seed = time(0);
+    srand(seed);
+
 	RPSGame rps;
 	rps.playGame();
 
