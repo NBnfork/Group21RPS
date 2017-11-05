@@ -23,8 +23,8 @@ class RPSGame{
 public:
 	RPSGame();
 	void playGame();
-	void assignToolUser();
-	void assignToolComp();
+	string assignToolUser();
+	string assignToolComp();
 	void printResults();
 
 private:

@@ -25,21 +25,21 @@ RPSGame::RPSGame() {
     this->scissor = 's';
 }
 
-void RPSGame::assignToolUser() {
+string RPSGame::assignToolUser() {
     if (rpseInput == 'r') {
-        cout << "Human: ROCK" << endl;
         userTool = new Rock();
         userTool->setStrength(userStrength);
-    }
-    if (rpseInput == 'p') {
-        cout << "Human: PAPER" << endl;
+        return "Rock";
+
+    } else if (rpseInput == 'p') {
         userTool = new Paper();
         userTool->setStrength(userStrength);
-    }
-    if (rpseInput == 's') {
-        cout << "Human: SCISSORS" << endl;
+        return "Paper";
+
+    } else {
         userTool = new Scissors();
         userTool->setStrength(userStrength);
+        return "Scissors";
     }
 }
 
@@ -57,13 +57,14 @@ void RPSGame::playGame() {
         cin >> compStrength;
     } else if (ynInput == 'n') {
         cout << "You have chose to use default strength values" << endl;
-		userStrength = 1; //otherwise they are being set to zero in the assign tool function
-		compStrength = 1;
+        userStrength = 1; //otherwise they are being set to zero in the assign tool function
+        compStrength = 1;
     }
 
     // do while loop for the game to play as long as the user has not input 'e'
     do {
         // prints a notice with a box around it
+        cout << endl;
         printBorder(width);
         printCenterTitle("Round " + to_string(rounds), width);
         printBorder(width);
@@ -73,15 +74,14 @@ void RPSGame::playGame() {
         rpseInput = validChar(inputStr, rpse, 4);
 
         if (rpseInput != 'e') {
-
+            string round = "";
             printBorder(width);
-            assignToolComp();
-            cout << "   VS." << endl;
+            round += "Computer: " + assignToolComp() + " vs. Human: ";
             userHistory.push_back(rpseInput); // must assign after comp AI done to avoid cheating
-            assignToolUser();
-			//fight will always be userTool vs. compTool
-			gameWinner = userTool->fight(compTool);
-
+            round += assignToolUser();
+            printCenterTitle(round, width);
+            //fight will always be userTool vs. compTool
+            gameWinner = userTool->fight(compTool);
 
             printResults();
         }
@@ -97,7 +97,7 @@ void RPSGame::playGame() {
 
 }
 
-void RPSGame::assignToolComp() // making this void as the Tools are available throughout class
+string RPSGame::assignToolComp() // making this void as the Tools are available throughout class
 {
 
     rCount = pCount = sCount = 0;
@@ -141,27 +141,25 @@ void RPSGame::assignToolComp() // making this void as the Tools are available th
         else if (randVal == 2) { compChoice = 's'; }
     }
 
+    rCount = pCount = sCount = 0;
+
     if (compChoice == 'r') {
-        cout << "Computer: ROCK" << endl;
         compTool = new Rock();
         compTool->setStrength(compStrength);
-    }
-    if (compChoice == 'p') {
-        cout << "Computer: PAPER" << endl;
+        return "Rock";
+    } else if (compChoice == 'p') {
         compTool = new Paper();
         compTool->setStrength(compStrength);
-    }
-    if (compChoice == 's') {
-        cout << "Computer: SCISSORS" << endl;
+        return "Paper";
+    } else {
         compTool = new Scissors();
         compTool->setStrength(compStrength);
+        return "Scissors";
     }
-    rCount = pCount = sCount = 0;
 }
 
 void RPSGame::printResults() {
 
-    printBorder(width);
     if (gameWinner == 't') {
         printCenterTitle("It's a tie!", width);
         ties = ties + 1;
