@@ -17,6 +17,7 @@ using std::vector;
 #include "rock.hpp"
 #include "paper.hpp"
 #include "scissors.hpp"
+#include "validInt.hpp"
 
 class RPSGame{
 
@@ -53,6 +54,9 @@ private:
 	char last;
 	char current;
 	int randVal;
+	string userStrengthString;
+	string compStrengthString;
+	
 	int userStrength;
 	int compStrength;
 	int width;
