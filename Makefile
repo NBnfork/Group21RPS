@@ -6,7 +6,7 @@
 
 PROJ = game
 
-ASSIGN = Group21_Group_Project
+ASSIGN = Group_Project_Group21
 
 SRCS = main.cpp paper.cpp rock.cpp RPSGame.cpp scissors.cpp tool.cpp utilities.cpp validChar.cpp validInt.cpp
 
@@ -41,6 +41,6 @@ clean:
 	@rm -f *.o ${PROJ}
 
 zip:
-	zip ${ASSIGN}_Buchen_Noah *.cpp *.hpp *.pdf makefile
+	zip ${ASSIGN} *.cpp *.hpp *.pdf makefile
 
 
