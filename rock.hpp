@@ -17,8 +17,6 @@ public:
     Rock(int);
 
     char fight(Tool*) override;
-
-
 };
 
 #endif

@@ -7,16 +7,27 @@
 *********************************************************************/
 #include "rock.hpp"
 
+/*********************************************************************
+ * Default constructor for Rock class
+*********************************************************************/
 Rock::Rock(){
 	this->strength = 1;
 	this->type = 'r';
 }
 
-Rock::Rock(int userInput){
-    //user sets strength
-	this->setStrength(userInput);
-	}
+/*********************************************************************
+ * Constructor that takes in user chosen strength
+ * @param userInput is the strength from the user selection
+*********************************************************************/
+Rock::Rock(int userInput) : Tool(userInput){
+	this->type = 'r';
+}
 
+/*********************************************************************
+ * The fight function returns who wins based on what two tools are
+ * fighting.
+ * @param computer is the Tool that is being faught
+*********************************************************************/
 char Rock::fight(Tool *computer) {
 
 	char winner; // 'h', 'c', 't' (human, computer, tie)

@@ -22,7 +22,7 @@ public:
     void setStrength(int);
 	int getStrength();
 	char getType();
-    virtual char fight(Tool*);
+    virtual char fight(Tool*) = 0;
 };
 
 #endif

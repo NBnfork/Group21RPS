@@ -17,10 +17,7 @@ public:
 
     Scissors(int);
 
-    char fight(Tool *computer) override ;
-
-
-
+    char fight(Tool *computer) override;
 };
 
 #endif

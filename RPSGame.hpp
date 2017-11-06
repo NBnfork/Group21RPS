@@ -7,6 +7,10 @@
 #ifndef RPSGAME_HPP
 #define RPSGAME_HPP
 
+#include "rock.hpp"
+#include "paper.hpp"
+#include "scissors.hpp"
+#include "validInt.hpp"
 #include "tool.hpp"
 #include <string>
 using std::string;
@@ -14,52 +18,48 @@ using std::string;
 #include <vector>
 using std::vector;
 
-#include "rock.hpp"
-#include "paper.hpp"
-#include "scissors.hpp"
-#include "validInt.hpp"
-
-class RPSGame{
+class RPSGame {
 
 public:
-	RPSGame();
-	void playGame();
-	string assignToolUser();
-	string assignToolComp();
-	void printResults();
+    RPSGame();
+
+    void playGame();
+
+    string assignToolUser();
+
+    string assignToolComp();
+
+    void printResults();
 
 private:
-	Tool* compTool;
-	Tool* userTool;
-	int rounds;
-	string inputStr;
-	char rpseInput;
-	char ynInput;
-	char yn[2] = {'y','n'};
-	char rpse[4] = {'r','p','s','e'};
-	vector<char> userHistory;
-	char compChoice;
-	char gameWinner;
-
-	int hWins;
-	int cWins;
-	int ties;
-
-	char rock;
-	char paper;
-	char scissor;
-	int rCount;
-	int pCount;
-	int sCount;
-	char last;
-	char current;
-	int randVal;
-	string userStrengthString;
-	string compStrengthString;
-	
-	int userStrength;
-	int compStrength;
-	int width;
+    Tool *compTool;
+    Tool *userTool;
+    int rounds;
+    string inputStr;
+    char rpseInput;
+    char ynInput;
+    char yn[2] = {'y', 'n'};
+    char rpse[4] = {'r', 'p', 's', 'e'};
+    vector<char> userHistory;
+    char compChoice;
+    char gameWinner;
+    int hWins;
+    int cWins;
+    int ties;
+    char rock;
+    char paper;
+    char scissor;
+    int rCount;
+    int pCount;
+    int sCount;
+    char last;
+    char current;
+    int randVal;
+    string userStrengthString;
+    string compStrengthString;
+    int userStrength;
+    int compStrength;
+    int width;
 };
 
 #endif

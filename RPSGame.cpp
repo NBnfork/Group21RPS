@@ -14,6 +14,9 @@ using std::vector;
 using std::rand;
 using std::to_string;
 
+/*********************************************************************
+ * Constructor for game class.
+*********************************************************************/
 RPSGame::RPSGame() {
     this->width = 72;
     rounds = 1;
@@ -25,6 +28,9 @@ RPSGame::RPSGame() {
     this->scissor = 's';
 }
 
+/*********************************************************************
+ * Assigns the tool based on the users selection.
+*********************************************************************/
 string RPSGame::assignToolUser() {
     if (rpseInput == 'r') {
         userTool = new Rock();
@@ -43,21 +49,34 @@ string RPSGame::assignToolUser() {
     }
 }
 
+/*********************************************************************
+ * Contains logic for game play. Prompts user if they want to set
+ * strength. Asks user what tool they would like to user for the round
+ * calls print function for round totals
+*********************************************************************/
 void RPSGame::playGame() {
+    // print title and menu
     printBoldCenterTitle("Welcome to the rock, paper, scissors game!", width);
     cout << "Would you like to set different strengths for the tools? (y - yes, n - no)" << endl;
+
+    // get user input
     getline(cin, inputStr);
     ynInput = validChar(inputStr, yn, 2);
 
     if (ynInput == 'y') {
+        // user strength
         cout << "Please enter strength for user, 1 to 100" << endl;
-        //requires int validation
-        getline(cin,userStrengthString);
-        userStrength=validInt(userStrengthString,1,100);
+        getline(cin, userStrengthString);
+        userStrength = validInt(userStrengthString, 1, 100);
+
+        // computer strength
         cout << "Please enter strength for computer, 1 to 100" << endl;
         getline(cin, compStrengthString);
-        compStrength=validInt(compStrengthString,1,100);
+        compStrength = validInt(compStrengthString, 1, 100);
+
     } else if (ynInput == 'n') {
+
+        // default values
         cout << "You have chose to use default strength values" << endl;
         userStrength = 1; //otherwise they are being set to zero in the assign tool function
         compStrength = 1;
@@ -71,28 +90,37 @@ void RPSGame::playGame() {
         printCenterTitle("Round " + to_string(rounds), width);
         printBorder(width);
 
+        // print menu
         cout << "Choose your tool (r - rock, p - paper, s - scissor, e - exit)" << endl;
         getline(cin, inputStr);
         rpseInput = validChar(inputStr, rpse, 4);
 
         if (rpseInput != 'e') {
             string round = "";
+
             printBorder(width);
+            // assign computer tool and construct string
             round += "Computer: " + assignToolComp() + " vs. Human: ";
+
             userHistory.push_back(rpseInput); // must assign after comp AI done to avoid cheating
             round += assignToolUser();
             printCenterTitle(round, width);
+
             //fight will always be userTool vs. compTool
             gameWinner = userTool->fight(compTool);
 
+            // print results
             printResults();
-			delete userTool;
+
+            // no memory leaks here
+            delete userTool;
             delete compTool;
         }
 
         this->rounds++;
     } while (rpseInput != 'e');
 
+    // print final totals
     printCenterTitle("Final game totals", width);
     printLeftAndRightAlignedStrings("Human", to_string(hWins), width);
     printLeftAndRightAlignedStrings("Computer", to_string(cWins), width);
@@ -101,9 +129,11 @@ void RPSGame::playGame() {
 
 }
 
+/*********************************************************************
+ * Assigns the computers tool based on user choice history.
+*********************************************************************/
 string RPSGame::assignToolComp() // making this void as the Tools are available throughout class
 {
-
     rCount = pCount = sCount = 0;
 
     if (rounds > 3) // must have 3 saved rounds in order to have enough input
@@ -147,6 +177,7 @@ string RPSGame::assignToolComp() // making this void as the Tools are available 
 
     rCount = pCount = sCount = 0;
 
+    // assign the computers tool
     if (compChoice == 'r') {
         compTool = new Rock();
         compTool->setStrength(compStrength);
@@ -162,8 +193,12 @@ string RPSGame::assignToolComp() // making this void as the Tools are available 
     }
 }
 
+/*********************************************************************
+ * Prints the results of the round.
+*********************************************************************/
 void RPSGame::printResults() {
 
+    // print the winner
     if (gameWinner == 't') {
         printCenterTitle("It's a tie!", width);
         ties = ties + 1;
@@ -175,6 +210,7 @@ void RPSGame::printResults() {
         cWins = cWins + 1;
     }
 
+    // print the totals
     printCenterTitle("Running game totals", width);
     printLeftAndRightAlignedStrings("Human", to_string(hWins), width);
     printLeftAndRightAlignedStrings("Computer", to_string(cWins), width);

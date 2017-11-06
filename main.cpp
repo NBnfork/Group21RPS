@@ -3,7 +3,9 @@
  * Author: Noah Buchen, Alexandra Henley, Elliott Lapinel, Patrick
  * Rice, and Samantha Tone
  * Date: 10/25/2017
- * Description:
+ * Description: A game of Rock paper scissors. Similar to playing on
+ * the playground except you can set the strength of players. Game
+ * is equiped with a AI that makes decision based on player history.
 *********************************************************************/
 
 #include "RPSGame.hpp"

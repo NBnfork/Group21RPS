@@ -7,17 +7,28 @@
 *********************************************************************/
 #include "paper.hpp"
 
+/*********************************************************************
+ * Default constructor for paper.
+*********************************************************************/
 Paper::Paper() {
 	//set default strength
 	this->strength = 1;
 	this->type = 'p';
 }
 
-Paper::Paper(int userInput){
-	//user sets strength
-	this->setStrength(userInput);
+/*********************************************************************
+ * Constructor for paper with user input strength
+ * @param userInput is the strength chosen by the user
+*********************************************************************/
+Paper::Paper(int userInput): Tool(userInput){
+	this->type = 'p';
 }
 
+/*********************************************************************
+ * The fight function returns who wins based on what two tools are
+ * fighting.
+ * @param computer is the Tool that is being faught
+*********************************************************************/
 char Paper::fight(Tool *computer) {
 
 	char winner; // 'h', 'c', 't' (human, computer, tie)
