@@ -50,11 +50,13 @@ void RPSGame::playGame() {
     ynInput = validChar(inputStr, yn, 2);
 
     if (ynInput == 'y') {
-        cout << "Please enter strength for user" << endl;
+        cout << "Please enter strength for user, 1 to 100" << endl;
         //requires int validation
-        cin >> userStrength;
-        cout << "Please enter strength for computer" << endl;
-        cin >> compStrength;
+        getline(cin,userStrengthString);
+        userStrength=validInt(userStrengthString,1,100);
+        cout << "Please enter strength for computer, 1 to 100" << endl;
+        getline(cin, compStrengthString);
+        compStrength=validInt(compStrengthString,1,100);
     } else if (ynInput == 'n') {
         cout << "You have chose to use default strength values" << endl;
         userStrength = 1; //otherwise they are being set to zero in the assign tool function
