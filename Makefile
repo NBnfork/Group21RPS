@@ -41,6 +41,6 @@ clean:
 	@rm -f *.o ${PROJ}
 
 zip:
-	zip ${ASSIGN} *.cpp *.hpp *.pdf makefile
+	zip ${ASSIGN} *.cpp *.hpp *.pdf Makefile
 
 
