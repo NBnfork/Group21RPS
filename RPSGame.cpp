@@ -86,6 +86,8 @@ void RPSGame::playGame() {
             gameWinner = userTool->fight(compTool);
 
             printResults();
+			delete userTool;
+            delete compTool;
         }
 
         this->rounds++;
